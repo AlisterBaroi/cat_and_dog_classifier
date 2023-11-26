@@ -10,6 +10,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
+RUN pip install -r requirements.txt
 
 CMD ["streamlit", "run", "app.py", "--server.port", "8080"]
