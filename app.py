@@ -1,4 +1,8 @@
 import streamlit as st
+
+# from tensorflow.keras.models import load_model
+
+# from tensorflow.compat.v1.keras.models import load_model
 from keras.models import load_model
 import numpy as np
 from PIL import Image
@@ -68,16 +72,16 @@ def main():
             # Make predictions when the button is clicked
             prediction = load_and_predict(image, model)
             # Assuming the model output is [probability_dog, probability_cat]
-            probability_dog = prediction[0][0] * 100
-            probability_cat = prediction[0][1] * 100
+            probability_dog = prediction[0][1] * 100
+            probability_cat = prediction[0][0] * 100
             # Display the predicted result
             if probability_dog > probability_cat:
                 st.write(
-                    f"This looks like a cat! (Probability: {probability_dog:.4f}%)"
+                    f"This looks like a Dog! (Probability: {probability_dog:.4f}%)"
                 )
             else:
                 st.write(
-                    f"This looks like a dog! (Probability: {probability_cat:.4f}%)"
+                    f"This looks like a Cat! (Probability: {probability_cat:.4f}%)"
                 )
 
 
