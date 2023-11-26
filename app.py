@@ -47,13 +47,19 @@ def load_and_predict(image, model):
 
 def main():
     st.title("Cat & Dog Classifier")
-    # Link to your Colab notebook
+    # Links to your Colab notebook & GitHub repo
     st.markdown(
-        "The model I created from scratch: [Link to Colab Notebook](https://colab.research.google.com/github/AlisterBaroi/cat_and_dog_classifier/blob/main/Alister's_Copy_of_fcc_cat_dog.ipynb)"
+        """Author: [Alister Animesh Baroi](https://github.com/AlisterBaroi)  
+           Deployed using: [GCP Cloud Build](https://cloud.google.com/build)  
+           Deployed on: [Google Cloud Run](https://cloud.google.com/run)  
+           Model created from scratch: [Link to Colab Notebook](https://colab.research.google.com/github/AlisterBaroi/cat_and_dog_classifier/blob/main/Alister's_Copy_of_fcc_cat_dog.ipynb)      
+        """
     )
-    st.subheader("Upload an image of a cat/dog to see the predictions:")
+    st.subheader("See Predictions:")
     uploaded_file = st.file_uploader(
-        "Choose an JPG, PNG or JPEG image", type=["jpg", "png", "jpeg"]
+        # "Choose an JPG, PNG or JPEG image", type=["jpg", "png", "jpeg"]
+        "Upload an JPG, PNG or JPEG image of cat/dog, and press 'Classify'",
+        type=["jpg", "png", "jpeg"],
     )
 
     if uploaded_file is not None:
