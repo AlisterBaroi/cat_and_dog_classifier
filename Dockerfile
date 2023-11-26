@@ -12,4 +12,4 @@ COPY . .
 
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-CMD ["streamlit", "run", "app.py"]
+CMD ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
