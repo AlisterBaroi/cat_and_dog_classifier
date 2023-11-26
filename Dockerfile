@@ -1,4 +1,4 @@
-FROM python:3.11.6-slim
+FROM python:3.11.6-slim-bullseye
 
 ENV HOST=0.0.0.0
  
