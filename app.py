@@ -51,7 +51,7 @@ def main():
     st.markdown(
         """Author: [Alister Animesh Baroi](https://github.com/AlisterBaroi)  
            Deployed using: [GCP Cloud Build](https://cloud.google.com/build)  
-           Deployed on: [Google Cloud Run](https://cloud.google.com/run)  
+           Deployed on: [GCP Cloud Run](https://cloud.google.com/run)  
            Model created from scratch: [Link to Colab Notebook](https://colab.research.google.com/github/AlisterBaroi/cat_and_dog_classifier/blob/main/Alister's_Copy_of_fcc_cat_dog.ipynb)      
         """
     )
