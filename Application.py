@@ -47,7 +47,7 @@ def load_and_predict(image, model):
 
 def main():
     st.title("Cat & Dog Classifier")
-    st.write("See [About](/About) page for project details.")
+    st.write("See '**About**' page for project details.")
     # st.markdown(
     #     """Author: [Alister Animesh Baroi](https://github.com/AlisterBaroi)
     #        Deployed using: [GCP Cloud Build](https://cloud.google.com/build)
