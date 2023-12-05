@@ -47,18 +47,18 @@ def load_and_predict(image, model):
 
 def main():
     st.title("Cat & Dog Classifier")
-    # Links to your Colab notebook & GitHub repo
-    st.markdown(
-        """Author: [Alister Animesh Baroi](https://github.com/AlisterBaroi)  
-           Deployed using: [GCP Cloud Build](https://cloud.google.com/build)  
-           Deployed on: [GCP Cloud Run](https://cloud.google.com/run)  
-           Model created from scratch: [Link to Colab Notebook](https://colab.research.google.com/github/AlisterBaroi/cat_and_dog_classifier/blob/main/Alister's_Copy_of_fcc_cat_dog.ipynb)      
-        """
-    )
+    st.write("See [About](/About) page for project details.")
+    # st.markdown(
+    #     """Author: [Alister Animesh Baroi](https://github.com/AlisterBaroi)
+    #        Deployed using: [GCP Cloud Build](https://cloud.google.com/build)
+    #        Deployed on: [GCP Cloud Run](https://cloud.google.com/run)
+    #        Model created from scratch: [Link to Colab Notebook](https://colab.research.google.com/github/AlisterBaroi/cat_and_dog_classifier/blob/main/Alister's_Copy_of_fcc_cat_dog.ipynb)Looks like you're creating a hyperlink in Streamlit! It seems you want to direct users to an "About" page for project details and technical information. Is there anything specific you'd like to know or do with this code?
+    #     """
+    # )
     st.subheader("See Predictions:")
     uploaded_file = st.file_uploader(
         # "Choose an JPG, PNG or JPEG image", type=["jpg", "png", "jpeg"]
-        "Upload an JPG, PNG or JPEG image of cat/dog, and press 'Classify'",
+        "Upload an JPG, PNG or JPEG image of cat/dog, and press 'Classify' to see the results.",
         type=["jpg", "png", "jpeg"],
     )
 
