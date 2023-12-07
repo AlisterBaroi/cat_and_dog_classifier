@@ -28,7 +28,7 @@ st.markdown(
 )
 st.subheader("Overview:")
 st.write(
-    "Developed a robust image classification web application using Streamlit, TensorFlow, and Keras deployed on Google Cloud Platform's Cloud Run. This application allows users to upload images of cats or dogs, and the custom-built deep learning model accurately identifies and classifies the uploaded images while providing confidence scores."
+    "Developed a robust image classification web application using Streamlit, TensorFlow, and Keras deployed on Google Cloud Platform's Cloud Run using the Cloud Build ((build logs here)(https://github.com/AlisterBaroi/cat_and_dog_classifier/runs/19335222830)). This application allows users to upload images of cats or dogs, and the custom-built deep learning model accurately identifies and classifies the uploaded images while providing confidence scores."
 )
 st.subheader("Key Features:")
 st.write(
