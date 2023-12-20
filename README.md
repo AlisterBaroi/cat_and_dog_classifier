@@ -11,5 +11,3 @@ Create new branch from `main` branch, work on the code, and PR to `staging` bran
       C[staging] -- 4. If CI tests fail --> B[new-branch];
       B[new-branch] -- 2. PR to staging --> C[staging];
 ```
-
-      asd
