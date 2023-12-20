@@ -27,7 +27,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 def preprocess_image(image):
     # Resize the image to match the input size of the model (150x150)
-    image = image.resize((150, 150))
+    image = image.resize((150, 250))
 
     # Convert the image to a numpy array
     image = np.array(image)
