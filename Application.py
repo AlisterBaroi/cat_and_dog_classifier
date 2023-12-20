@@ -28,12 +28,16 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 def preprocess_image(image):
     # Resize the image to match the input size of the model (150x150)
     image = image.resize((150, 150))
+
     # Convert the image to a numpy array
     image = np.array(image)
     # Normalize the pixel values to be in the range [0, 1]
     image = image / 255.0
     # Expand the dimensions to create a batch of 1
     image = np.expand_dims(image, axis=0)
+    # st.write("image size:", image.size)
+    # st.write("image shape:", image.shape)
+    # st.write("image shape:", image.shape[1:3])
     return image
 
 
