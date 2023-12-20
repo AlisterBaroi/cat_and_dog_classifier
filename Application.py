@@ -35,9 +35,9 @@ def preprocess_image(image):
     image = image / 255.0
     # Expand the dimensions to create a batch of 1
     image = np.expand_dims(image, axis=0)
-    st.write("image size:", image.size)
-    st.write("image shape:", image.shape)
-    st.write("image shape:", image.shape[1:3])
+    # st.write("image size:", image.size)
+    # st.write("image shape:", image.shape)
+    # st.write("image shape:", image.shape[1:3])
     return image
 
 
