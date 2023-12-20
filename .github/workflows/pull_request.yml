@@ -17,6 +17,10 @@ jobs:
           SOURCE_BRANCH=$(jq -r '.pull_request.head.ref' "$GITHUB_EVENT_PATH")
 
           if [ "$FROM_BRANCH" != "main" ] || [ "$SOURCE_BRANCH" != "staging" ]; then
-            echo "Pull requests to 'main' must come from 'staging'."
+            echo "Pull requests to 'main' must come from 'staging' branch."
             exit 1
+          else
+            echo "Permission: Success!"
+            echo "Branch protection ruls passed."
+            exit 0
           fi
