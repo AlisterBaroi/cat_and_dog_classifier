@@ -1,0 +1,22 @@
+name: Enforce Pull Request Source Branch
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  enforce-branch-protection:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check branch source
+        if: github.event_name == 'pull_request'
+        run: |
+          FROM_BRANCH=$(jq -r '.pull_request.base.ref' "$GITHUB_EVENT_PATH")
+          SOURCE_BRANCH=$(jq -r '.pull_request.head.ref' "$GITHUB_EVENT_PATH")
+
+          if [ "$FROM_BRANCH" != "main" ] || [ "$SOURCE_BRANCH" != "staging" ]; then
+            echo "Pull requests to 'main' must come from 'staging'."
+            exit 1
+          fi
