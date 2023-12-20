@@ -11,5 +11,6 @@ Create new branch from `main` branch, work on the code, and PR to `staging` bran
       C[staging] -- 4. If CI tests fail --> B[new-branch];
       B[new-branch] -- 2. PR to staging --> C[staging];
 ```
+Note: The `main` and `staging` branches are protected (and deletion protected), you cannot directly commit or PR to the `main` branch. The only way to commit to `main` is to PR to `straging`. If the CI tests on `staging` passes, then the admin can do PR from `staging` to `main`. But, if the CI tests fail, you need to review the code, for we cannot PR to `staging`, thus cannot PR to `main` from `staging`.
 
 testing
