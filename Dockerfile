@@ -1,5 +1,13 @@
 FROM python:3.11-alpine
 
+# Install necessary system packages
+RUN apk add --no-cache \
+    build-base \
+    lapack-dev \
+    gfortran \
+    musl-dev \
+    libffi-dev
+
 ENV HOST=0.0.0.0
  
 ENV LISTEN_PORT 8080
