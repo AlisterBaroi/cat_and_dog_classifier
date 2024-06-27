@@ -1,6 +1,9 @@
 # Cat & Dog Classifier
 Live Link: https://cat-and-dog-classifier-5b4x24knra-uc.a.run.app/
 
+![image](https://github.com/AlisterBaroi/cat_and_dog_classifier/assets/44337842/da972ac3-c403-464a-a07e-c8151fa461da)
+
+
 ## Branch Metodology
 Create new branch from `main` branch, work on the code, and PR to `staging` branch. Once all the CI tests run successfully, the `staging` will auto PR to `main`. The diagram below illustrates the flow:
 
