@@ -1,7 +1,7 @@
 # Cat & Dog Classifier
 Live Link: https://cat-and-dog-classifier-5b4x24knra-uc.a.run.app/
 
-![image](https://github.com/AlisterBaroi/cat_and_dog_classifier/assets/44337842/da972ac3-c403-464a-a07e-c8151fa461da)
+![image](https://github.com/AlisterBaroi/cat_and_dog_classifier/blob/c011b26cadaf6047329622a6730a4a6de8ee107f/.github/workflows/demo.png)
 
 
 ## Branch Metodology
